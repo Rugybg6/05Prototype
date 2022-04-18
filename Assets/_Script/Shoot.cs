@@ -6,7 +6,7 @@ public class Shoot : MonoBehaviour
 {
     private Animator _Animator;
 
-    private const string FIRE = "Fire";
+    private const string FIRE = "Fire"  ;
     [Tooltip("Flecha a lanzar")]
     public GameObject arrow;
     [Tooltip("fuerza al lanzar")]
