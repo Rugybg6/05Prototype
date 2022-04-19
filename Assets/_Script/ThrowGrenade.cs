@@ -9,6 +9,8 @@ public class ThrowGrenade : MonoBehaviour
     public GameObject grenadePrefab;
 
     public Transform spawnPoint;
+
+
     // Start is called before the first frame update
     void Start()
     {

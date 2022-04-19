@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/_Script/CameraLoop.cs
-    - Assets/_Script/CameraLoop.cs.meta
-    - Assets/_Script/PlayerCharacterController.cs
+    - Assets/Scenes/SampleScene/NavMesh.asset
+    - Assets/_Script/IA.cs
+    - Assets/_Script/IA.cs.meta
     - 
-    m_Values: 00000000
+    m_Values: 01010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

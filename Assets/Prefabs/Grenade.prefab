@@ -341,3 +341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c45e76a4fc4cbb4e9ea72c98086fc3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  countdown: 3
+  radius: 5
+  explosionForce: 700
+  grenadePE: {fileID: 8423223322169513733, guid: 032f85c0d2946464d887eaf4a66d4b66, type: 3}

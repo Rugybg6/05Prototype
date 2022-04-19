@@ -12,6 +12,7 @@ public class Grenade : MonoBehaviour
     public float explosionForce = 700;
 
     private bool hasExploded=false;
+    public GameObject grenadePE;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class Grenade : MonoBehaviour
 
     void Explode()
     {
+        
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
         foreach (var rangeObject in colliders)
         {
@@ -40,6 +42,9 @@ public class Grenade : MonoBehaviour
                 rangeObjectRigidbody.AddExplosionForce(explosionForce,transform.position,radius);
             }
         }
+
+        GameObject casa = Instantiate(grenadePE, transform.position, transform.rotation);
+        casa.GetComponent<ParticleSystem>().Play();
         Destroy(this.gameObject);
     }
 }
