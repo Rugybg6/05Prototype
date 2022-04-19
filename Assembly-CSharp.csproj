@@ -55,7 +55,9 @@
      <Compile Include="Assets\_Script\Shoot.cs" />
      <Compile Include="Assets\_Script\Arrow.cs" />
      <Compile Include="Assets\_Script\PlayerCharacterController.cs" />
+     <Compile Include="Assets\_Script\ThrowGrenade.cs" />
      <Compile Include="Assets\_Script\CameraLoop.cs" />
+     <Compile Include="Assets\_Script\Grenade.cs" />
      <Compile Include="Assets\_Script\PlayerController.cs" />
      <None Include="Assets\RyuGiKen\Crossbow\README.txt" />
  <Reference Include="UnityEngine">

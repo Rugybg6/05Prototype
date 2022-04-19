@@ -3506,6 +3506,21 @@ MonoBehaviour:
     m_Bits: 64
   speed: 10
   jumpHeight: 3
+--- !u!114 &8221054174106188374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8221054174106188370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0642aca711291814f97644b806bd59d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwForce: 1
+  grenadePrefab: {fileID: 8145848134933428335, guid: 82f1499c38605b447a42807073a0e0f5, type: 3}
+  spawnPoint: {fileID: 831342479}
 --- !u!1001 &9200194211600943622
 PrefabInstance:
   m_ObjectHideFlags: 0
