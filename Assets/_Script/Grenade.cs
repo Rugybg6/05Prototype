@@ -43,8 +43,8 @@ public class Grenade : MonoBehaviour
             }
         }
 
-        GameObject casa = Instantiate(grenadePE, transform.position, transform.rotation);
-        casa.GetComponent<ParticleSystem>().Play();
+        GameObject granada = Instantiate(grenadePE, transform.position, transform.rotation);
+        granada.GetComponent<ParticleSystem>().Play();
         Destroy(this.gameObject);
     }
 }

@@ -11,8 +11,12 @@ public class IA : MonoBehaviour
     public Transform[] destinations;
     
     public float distanceToFollowPath = 2f;
-    private int numberDestination = 0;
     
+    private int numberDestination = 0;
+
+    public GameObject player;
+
+    public float distanceToFollowPlayer = 3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +26,23 @@ public class IA : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+        if (distanceToPlayer < distanceToFollowPlayer)
+        {
+            FollowPlayer();
+        }
+        else
+        {
+            EnemyPath();
+        }
+    }
+
+     void FollowPlayer()
+    {
+        navMeshAgent.destination = player.transform.position;
+    }
+    void EnemyPath()
+    {
         float distance = Vector3.Distance(transform.position, destinations[numberDestination].position);
         if (distance < distanceToFollowPath)
         {
@@ -30,7 +51,8 @@ public class IA : MonoBehaviour
             {
                 numberDestination = 0;
             }
-            navMeshAgent.destination = destinations[numberDestination].position;
+           
         }
+         navMeshAgent.destination = destinations[numberDestination].position;
     }
 }
